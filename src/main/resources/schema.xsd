@@ -1,0 +1,17 @@
+<?xml version = "1.0"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="/jaxb/gen"
+        xmlns:userns="/jaxb/gen"
+        elementFormDefault="qualified">
+
+    <element name="service" type="userns:service"/>
+
+    <complexType name="service">
+        <sequence>
+            <element name="sessionID" type="int"/>
+            <element name="message" type="string"/>
+        </sequence>
+    </complexType>
+
+</schema>
